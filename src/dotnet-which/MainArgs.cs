@@ -6,7 +6,7 @@ namespace Which
 {
     public class MainArgs
     {
-        private const string usage = @"dotnet-which - The .NET tool finder
+        private const string usage = @"dotnet-which - The .NET tools finder
 
 Usage:
   dotnet which [options]
