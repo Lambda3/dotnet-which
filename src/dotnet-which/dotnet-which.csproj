@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PackAsTool>true</PackAsTool>
+    <RootNamespace>Which</RootNamespace>
+    <Version>0.1.0</Version>
+    <Authors>Lambda3</Authors>
+    <PackageTags>dotnet</PackageTags>
+    <RepositoryUrl>https://github.com/Lambda3/dotnet-which.git</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/lambda3/dotnet-which/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Lambda3/dotnet-which</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>A tool that helps you find other dotnet tools
+
+Install with the .NET CLI 2.1 or newer:
+dotnet tool install -g dotnet-which
+
+Run dotnet-which from the command line, for example:
+dotnet which</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="docopt.net" Version="0.6.1.9" />
+  </ItemGroup>
+
+</Project>

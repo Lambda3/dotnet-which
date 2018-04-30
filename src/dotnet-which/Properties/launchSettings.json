@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "dotnet-which": {
+      "commandName": "Project"
+    }
+  }
+}
