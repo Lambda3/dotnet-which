@@ -49,7 +49,7 @@ namespace Which
             else
             {
                 binary = "/usr/bin/env";
-                arguments = "sh -c \"/usr/bin/env find $PATH -name 'dotnet-*' -type f '(' -perm -u+x -o -perm -g+x -o -perm -o+x ')'\"";
+                arguments = "sh -c \"/usr/bin/env find $PATH -name 'dotnet-*' '(' -type l -o -type f ')' '(' -perm -u+x -o -perm -g+x -o -perm -o+x ')'\"";
             }
             if (verbose)
                 WriteLine($"Running: {binary} {arguments}");
