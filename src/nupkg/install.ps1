@@ -1,8 +1,6 @@
-Push-Location $PSScriptRoot\..\dotnet-which
-dotnet pack -c Release -o ..\nupkg
+. $PSScriptRoot\pack.ps1
 if ($LASTEXITCODE -ne 0) { exit }
-Pop-Location
-if ((dotnet tool list -g | Where-Object { $_.Contains('dx') })) {
+if ((dotnet tool list -g | Where-Object { $_.Contains('dotnet-which') })) {
     dotnet tool uninstall -g dotnet-which
 }
 dotnet tool install -g dotnet-which
